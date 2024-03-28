@@ -1,0 +1,16 @@
+{
+  "name": "@full-stack-starter/trpc",
+  "version": "0.0.0",
+  "scripts": {
+    "test": "sst bind vitest",
+    "typecheck": "tsc -noEmit",
+    "test-circular": "pnpm depcruise --validate .dependency-cruiser.js ."
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.29",
+    "dependency-cruiser": "^16.2.4"
+  },
+  "dependencies": {
+    "@trpc/server": "11.0.0-next-beta.318"
+  }
+}

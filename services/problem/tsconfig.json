@@ -1,0 +1,14 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "module": "esnext",
+    "moduleResolution": "node",
+    "composite": true,
+    "baseUrl": ".",
+    "paths": {
+      "@full-stack-starter/packages/*": ["../../packages/*"],
+      "@full-stack-starter/packages/trpc": ["../../packages/trpc"]
+    }
+  },
+  "include": ["./**/*.ts"]
+}
