@@ -1,0 +1,4 @@
+**/dist
+
+packages/web/tailwind.config.js
+packages/web/postcss.config.js

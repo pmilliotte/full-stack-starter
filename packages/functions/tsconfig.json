@@ -1,0 +1,20 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "strictNullChecks": true,
+    "composite": true,
+    "outDir": "dist",
+    "emitDeclarationOnly": true,
+    "paths": {
+      "@starter/shared": ["../shared/src"],
+      "~/*": ["./src/*"]
+    }
+  },
+  "references": [{ "path": "../shared" }],
+  "include": ["**/*.ts", "**/*.json"],
+  "exclude": ["./dist"]
+}
